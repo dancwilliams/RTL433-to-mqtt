@@ -7,4 +7,9 @@ MQTT_PORT=1883
 MQTT_TOPIC="sensors/rtl_433"
 MQTT_QOS=0
 DEBUG=False # Change to True to log all MQTT messages
+DEFAULT_RTL433_PARAMETERS=True # Change to False to use parameters below.  All Parameters must be filed out
+PROTOCOL=““
+FREQUENCY=“”
+GAIN=“”
+OFFSET=“”
 # End config section

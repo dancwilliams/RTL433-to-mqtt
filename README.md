@@ -1,7 +1,7 @@
 # RTL433 to mqtt gateway
 
 This small script is a cheap and easy way to start with IoT projects.
-By using the great rtl_433 software and a cheap RTL-SDR receiver it will listen to all kinds of devices transmitting at the 433,92 Mhz frequency.
+By using the great rtl_433 software and a cheap RTL-SDR receiver it will listen to all kinds of devices transmitting at the default 433,92 Mhz frequency as well as other frequencies defined on `config.py`.
 
 Quite likely it will receive information from weatherstations in your area,
 if you don't own one, your neighbours might!
