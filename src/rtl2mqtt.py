@@ -14,7 +14,8 @@ from config import *
 if DEFAULT_RTL433_PARAMETERS:
     rtl_433_cmd = "/usr/local/bin/rtl_433 -F json"
 else:
-    rtl_433_cmd = "/usr/local/bin/rtl_433 -F json -R " + PROTOCOL + " -f " + FREQUENCY + " -g " + GAIN + " -p " + OFFSET
+    # rtl_433_cmd = "/usr/local/bin/rtl_433 -F json -R " + PROTOCOL + " -f " + FREQUENCY + " -g " + GAIN + " -p " + OFFSET
+    rtl_433_cmd = "/usr/local/bin/rtl_433 -F json -R " + PROTOCOL + " -f " + FREQUENCY
 
 important_rtl_output_re = re.compile("^(Found|Tuned)")
 
