@@ -116,5 +116,5 @@ docker build -t rtl433-mqtt-gateway .
 This will build the image needed to start a container. When the build process is completed start the container:
 
 ```bash
-docker run --name rtl_433 -d --rm --privileged -v /dev/bus/usb:/dev/bus/usb  rtl433-mqtt-gateway
+docker run --name rtl_433 -d --restart unless-stopped --privileged -v /dev/bus/usb:/dev/bus/usb  rtl433-mqtt-gateway
 ```
